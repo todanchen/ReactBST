@@ -1,0 +1,57 @@
+.sidebar {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    overflow: auto;
+    background-color: antiquewhite;
+
+    &__logo {
+        display: grid;
+        place-items: center;
+        height: 100px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Mochiy Pop P one', sans-serif;
+    }
+
+    &__menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+            display: flex;
+            align-items: center;
+            place-content: flex-start;
+            padding: 0.6rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #555555;
+
+            &.active {
+                animation: changeColor 1s ease-in;
+                animation-fill-mode: forwards;
+
+            }
+
+            &__icon {
+                margin-right: 1rem;
+
+                i {
+                    font-size: 1.75rem;
+                }
+            }
+        }
+    }
+}
+
+@keyframes changeColor {
+
+    to {
+        background-color: #308efe;
+        color: #fff;
+        border-radius: 30px;
+    }
+}

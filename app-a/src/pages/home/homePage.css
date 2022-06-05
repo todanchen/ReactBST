@@ -1,0 +1,32 @@
+div.homePage div.textConetnt h1 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-bottom: 1.3rem;
+  font-style: normal;
+}
+
+div.homePage div.textConetnt p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  width: 60%;
+}
+
+div.homePage div.textConetnt div.cards_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+div.homePage div.textConetnt div.cards_contain .mb-2 {
+  padding: 1rem;
+  width: 40%;
+}
+
+div.homePage div.textConetnt div.cards_contain .mb-2 p.card_body p.card_text {
+  margin: 0;
+  padding: 1rem 0;
+  width: 100%;
+}
+/*# sourceMappingURL=homePage.css.map */

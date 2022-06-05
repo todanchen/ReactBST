@@ -1,0 +1,76 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 15vw;
+  position: fixed;
+  overflow: auto;
+  background-color: antiquewhite;
+}
+
+.sidebar__logo {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Mochiy Pop P one', sans-serif;
+}
+
+.sidebar__menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar__menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: flex-start;
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555555;
+}
+
+.sidebar__menu__item.active {
+  -webkit-animation: changeColor 1s ease-in;
+          animation: changeColor 1s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.sidebar__menu__item__icon {
+  margin-right: 1rem;
+}
+
+.sidebar__menu__item__icon i {
+  font-size: 1.75rem;
+}
+
+@-webkit-keyframes changeColor {
+  to {
+    background-color: #308efe;
+    color: #fff;
+    border-radius: 30px;
+  }
+}
+
+@keyframes changeColor {
+  to {
+    background-color: #308efe;
+    color: #fff;
+    border-radius: 30px;
+  }
+}
+/*# sourceMappingURL=sidebar.css.map */
